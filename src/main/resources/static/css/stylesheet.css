@@ -1,0 +1,109 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+}
+
+img {
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#container {
+	background-color: #808080;
+	max-width: 90%;
+	margin: 30px auto;
+}
+
+#navbar-header {
+	max-width: 100%;
+}
+
+#menu-container {
+	background-color: black;
+}
+
+#posts {
+	background-color: #c0c0c0;
+}
+
+ul, ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	display: inline;
+	white-space: nowrap;
+	margin-right: 5px;
+}
+
+ul {
+	padding: 10px 0 10px 20px;
+}
+
+ul li a {
+	color: white;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+a {
+	color: black;
+}
+
+#form-container {
+	width: 60%;
+	margin: 20px auto;
+}
+
+input[type=text] {
+	width: 100%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+input[type=password] {
+	width: 100%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#form-article {
+	width: 100%;
+	resize: vertical;
+}
+
+label {
+	width: 100%;
+	display: inline-block;
+}
+
+input[type=submit] {
+	color: red;
+	margin: 10px auto;
+	display: inline-block;
+}
+
+#signup-container {
+	width: 60%;
+	margin: 20px auto;
+}
+
+#login-container {
+	width: 60%;
+	margin: 20px auto;
+}
+
+a:visited {
+	color: white;
+}

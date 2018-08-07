@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="head :: head">
+</head>
+<body>
+	<header id="navbar-header" th:fragment="navbar">
+
+		<div id="image">
+			<img src="images/image.png" th:src="@{../images/image.png}" />
+		</div>
+		<div id="menu-container">
+			<ul id="navbar">
+
+				<li><a href="home.html" th:href="@{/}">Home</a></li>
+				<li sec:authorize="hasRole('ROLE_USER')"><a href="addpost.html"
+					th:href="@{/addpost}">Add New Post</a></li>
+				<li><a href="about.html" th:href="@{/about}">About</a></li>
+				<li sec:authorize="isAnonymous()"><a href="login.html"
+					th:href="@{/login}">Log In</a></li>
+				<li sec:authorize="isAnonymous()"><a href="registration.html"
+					th:href="@{/registration}">Sign Up</a></li>
+
+			</ul>
+		</div>
+
+	</header>
+</body>
+</html>

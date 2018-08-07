@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="head :: head">
+</head>
+<body>
+	<div id="container">
+		<header th:replace="header :: navbar"></header>
+		<div id="signup-container">
+			<form th:object="${user}" th:action="@{/add}" method="post">
+				<label for="form-login">Login</label> <input th:field="*{login}"
+					type="text" /> <label for="form-password">Password</label> <input
+					th:field="*{password}" type="password" /> <input type="submit"
+					value="Register" />
+			</form>
+		</div>
+		<footer th:replace="footer :: footer"></footer>
+	</div>
+</body>
+</html>

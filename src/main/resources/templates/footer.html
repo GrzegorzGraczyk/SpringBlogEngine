@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="head :: head">
+</head>
+
+<body>
+	<footer th:fragment="footer">
+		<div class="container">
+			<h5 th:inline="text">
+				Hello [[${#httpServletRequest.remoteUser}]]! <a th:href="@{/logout}">Logout</a>
+			</h5>
+		</div>
+	</footer>
+</body>
+</html>

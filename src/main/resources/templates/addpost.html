@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="head :: head">
+<title th:replace="head :: #pageTitle">Login</title>
+</head>
+<body>
+	<div id="container">
+		<header th:replace="header :: navbar"></header>
+		<div id="form-container">
+
+			<form id="form-post" th:object="${post}" th:action="@{/sendpost}"
+				method="post">
+				<label for="form-title">Title</label> <input id="form-title"
+					th:field="*{title}" type="text" /> <label for="form-article">Article</label>
+				<textarea id="form-article" th:field="*{article}" form="form-post"></textarea>
+				<input type="submit" value="Add Post" />
+			</form>
+
+		</div>
+		<footer th:replace="footer :: footer"></footer>
+	</div>
+</body>
+</html>
